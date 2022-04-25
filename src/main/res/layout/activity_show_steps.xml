@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/updateprfile"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icons8_test_account_48" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/phone_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Hello there, Welcome Back"
+        android:transitionName="logo_text"
+        android:layout_marginTop="13dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/quoote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_extralight"
+        android:text="Start walking and Burn the Calories"
+        android:transitionName="logo_text"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:text="STEPS COUNT"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Start Pedometer"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Pedometer"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center"
+            android:padding="5dp"
+            android:src="@drawable/fire" />
+
+        <TextView
+            android:id="@+id/calorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="Calories Burnt"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
